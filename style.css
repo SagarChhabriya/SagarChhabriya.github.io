@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", 'sans-serif';
-    font-family: "Roboto Slab", serif; 
+    font-family: "Roboto Slab", serif;
     box-sizing: border-box;
 }
 
@@ -204,6 +204,98 @@ nav ul li a:hover::after {
     display: block;
 }
 
+/* -----------------------------------CSS for Publications Section---------------------------------- */
+#publications {
+    padding: 50px 0;
+    background-color: #3C3D37;
+    /* Optional background color */
+}
+
+.publications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.publication {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.publication-info {
+    padding: 20px;
+}
+
+.publication-info h3 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.publication-info .authors {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.publication-info .journal {
+    color: #ff004f;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.publication-links {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-paper,
+.btn-doi {
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-paper {
+    background: #ff004f;
+    color: white;
+}
+
+.btn-doi {
+    border: 1px solid #ff004f;
+    color: #ff004f;
+}
+
+.btn-paper:hover {
+    background: #d90042;
+}
+
+.btn-doi:hover {
+    background: #ff004f;
+    color: white;
+}
+
+.publication:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Font Awesome for icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 
 
 
@@ -402,7 +494,7 @@ form textarea {
     border-radius: 6px;
 }
 
-form .btn-submit { 
+form .btn-submit {
     display: inline-block;
     background: #3C3D37;
     font-size: 15px;
