@@ -1,54 +1,46 @@
-# Personal Portfolio
+# Personal Portfolio  
 
-Welcome to my personal portfolio project! 🚀 This portfolio was crafted using vanilla CSS and HTML and is designed to showcase my work and skills. This is the first project in my 100 Days of Code journey.
+Welcome to my personal portfolio project. This portfolio was built using vanilla CSS and HTML to showcase my work and skills. 
 
-## Features
+## Features  
 
-- **Responsive Design**: The portfolio is built to be fully responsive, ensuring it looks great on all devices.
-- **Smooth Transitions**: Enhanced user experience with smooth transitions for a modern feel.
-- **CI/CD Pipeline**: Integrated with a CI/CD pipeline that automatically deploys updates to Vercel with every push to the remote repository.
+- **Responsive Design**: Works well on all devices, from desktops to mobile phones.  
+- **Smooth Transitions**: Subtle animations improve the browsing experience.  
+- **CI/CD Pipeline**: Automatically deploys updates to Vercel whenever changes are pushed to the repository.  
 
-## Live Demo
+## Live Demo  
 
-Check out the live portfolio here: [Personal Portfolio](https://sagar-chhabriya.vercel.app/)
+You can view the live portfolio here: [Personal Portfolio](https://sagarchhabriya.github.io/)  
 
-## Technologies Used
+## Technologies Used  
 
-- **HTML**: Structure and content of the website.
-- **CSS**: Styling and layout design.
-- **CI/CD**: Continuous Integration and Continuous Deployment with Vercel.
+- **HTML**: Handles the structure and content.  
+- **CSS**: Manages styling and layout.  
+- **CI/CD**: Automated deployments via GitHub Pages.  
 
-## Installation and Setup
+## Installation and Setup  
 
-1. **Clone the Repository**:
+1. **Clone the Repository**:  
+   ```bash  
+   git clone https://github.com/SagarChhabriya/SagarChhabriya.github.io.git  
+   ```  
 
-    ```bash
-    git clone https://github.com/your-username/your-repo.git
-    ```
+2. **Navigate to the Project Directory**:  
+   ```bash  
+   cd SagarChhabriya.github.io  
+   ```  
 
-2. **Navigate to the Project Directory**:
+3. **Open in Browser**:  
+   Simply open `index.html` in your preferred browser to view it locally.  
 
-    ```bash
-    cd your-repo
-    ```
+## Contribution  
 
-3. **Open `index.html`** in your browser to view the portfolio locally.
+If you'd like to contribute, feel free to fork the repository and submit improvements. For major changes, please open an issue first to discuss your ideas.  
 
-## Contribution
+## Acknowledgments  
 
-Feel free to fork the repository and make contributions! For major changes or enhancements, please open an issue first to discuss what you would like to change.
+This project was inspired by modern portfolio designs, and I’m grateful for the open-source community’s resources and tools.  
 
+## Contact  
 
-## Acknowledgments
-
-- Inspired by various modern portfolio designs.
-- Thanks to the open-source community for their valuable resources and tools.
-
-## Contact
-
-For any inquiries or feedback, please reach out to me at [LinkedIn](https://linkedin.com/in/sagar-chhabriya/).
-
----
-
-Proudly launched as the first project in my 100 Days of Code journey with Innovate Web Labs. Thank you for checking it out!
-
+For questions or feedback, you can reach me on [LinkedIn](https://linkedin.com/in/sagar-chhabriya/).  
