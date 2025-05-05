@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", 'sans-serif';
+    font-family: "Roboto Slab", serif; 
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #3C3D37;
+    color: #fff;
+}
+
+
+html {
+    /* for routing to the nav bar options */
+    scroll-behavior: smooth;
+}
+
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 250px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #262626;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+
+}
+
+nav ul li a::after {
+    content: '';
+    /* Now this is invisible, making it 100% will display the underline but we want this when we hover */
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    /* Add 6px and will strike throught the text. Add -6px it will place the line at the bottom (make it underline)*/
+    bottom: -6px;
+
+    /* After adding hover to the after apply transition */
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    /* When the mouse enters it will make the underline to 100% with a transition of 0.5s */
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    margin-top: 20px;
+    color: #262626;
+}
+
+.header-text p {
+    color: #262626;
+}
+
+.header-text h1 span {
+    color: #ff004f;
+
+}
+
+/*------------------------------------ About Section Starts here---------------------------------------- */
+
+
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+    transition: transform 0.5s ease;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+
+.about-col-1:hover {
+    transform: scale(1.1);
+
+}
+
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    /* top left-right bottom */
+    margin: 20px 0 40px;
+    color: #fff;
+
+}
+
+.tab-titles p {
+    font-size: 25px;
+}
+
+.tab-links {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    margin-right: 50px;
+    transition: 0.5s ease;
+}
+
+.tab-links:hover {
+    font-size: 20px;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+    list-style: none;
+    line-height: 20px;
+
+}
+
+.tab-contents ul li span {
+    color: #ff0051;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tab-contents {
+    /* default all the 'tab-contents' p tags will appear, so only display the first one's */
+    /* hide the content/text */
+    display: none;
+
+}
+
+.tab-contents.active-tab {
+    /* display the content of only active-tab */
+    display: block;
+}
+
+
+
+
+
+/* -----------------------------------------------Services------------------------------------------------- */
+#services {
+    /* top-bottom left-right */
+    padding: 30px 0;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #262626;
+    /* background: #fff; */
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-width: 10px;
+
+    /* add transation to the services divs */
+    transition: bacground 0.5s, transform 0.5s;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* set the size of logos using font-size property */
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+
+.services-list div h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
+    box-shadow: 10px 5px 5px black;
+    color: black;
+}
+
+.services-list p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* --------------------------------------------------------------Portfolio------------------------------------------------------------- */
+
+#portfolio {
+    /* step1: */
+    padding: 50px 0;
+}
+
+/* make the list grid */
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.work img {
+    width: 100%;
+    display: block;
+
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    padding-left: 8px;
+
+}
+
+.layer h3 {
+
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+
+}
+
+.work:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 5px 5px black;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    border-radius: 5px;
+    padding: 14px 50px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.5s;
+
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+/* ---------------------------------------------------------------Contact----------------------------------------------------------------- */
+
+.contact-left {
+    /* flex basis distributes the width */
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #ff004f;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+
+.btn.download {
+    display: inline-block;
+
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn-submit { 
+    display: inline-block;
+    background: #3C3D37;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.copyright {
+    /* text-align: center;
+    justify-content: center; */
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color: #ff004f;
+}
+
+/* Making it responsive: Media Queries */
+/* ---------------------------------------------------------CSS Responsive------------------------------------------------------------ */
+
+/* for the menu bar  */
+nav .fas {
+    display: none;
+}
+
+/* Note the space between 'and' operator and parentheses */
+@media only screen and (max-width:600px) {
+    #header {
+        background-image: url(images/background-responsive.JPG);
+        width: 100%;
+    }
+
+    .header-text {
+        margin-top: 100%;
+        color: black;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .sub-title {
+        font-size: 2.5rem;
+    }
+
+    .but.download {
+        font-size: 10px;
+        padding: 0;
+        text-align: center;
+
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        /* z-index will make the bars/burger logo to stay behined */
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav>i {
+        position: fixed;
+        right: 25px;
+        margin-top: 25px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    /* Fit the About Me picture */
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+
+    .about-col-2 {
+        font-size: 14px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+    }
+
+}
