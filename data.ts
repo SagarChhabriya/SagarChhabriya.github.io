@@ -120,7 +120,7 @@ export const PROJECTS: ProjectItem[] = [
     tech: ["WeatherAPI", "FastAPI", "Docker", "MongoDB", "GitHub Actions"],
     description: ["Architected AQI prediction system with automated hourly data ingestion.", "Implemented daily model retraining pipelines and versioned models."],
     link: "https://github.com/SagarChhabriya/10PearlsAQI",
-    image: "/images/10pearls.png"
+    image: "./images/10pearls.png"
   },
   {
     title: "Unify",
@@ -134,35 +134,35 @@ export const PROJECTS: ProjectItem[] = [
     tech: ["Python", "Streamlit", "FAISS", "Gemini-flash-2.0"],
     description: ["Engineered RAG assistant automating student FAQs regarding course content.", "Designed robust prompt templates to reduce hallucination."],
     link: "https://github.com/SagarChhabriya/atombot",
-    image: "/images/atombot.png"
+    image: "./images/atombot.png"
   },
   {
     title: "Churn Predictor",
     tech: ["Docker", "GCP", "W&B", "GitHub Actions"],
     description: ["Developed churn prediction classifier, tracking experiments via W&B.", "Productionized workflow via Docker and CI/CD to GCP Artifact Registry."],
     link: "https://github.com/SagarChhabriya/mlops-project",
-    image: "/images/churn.png"
+    image: "./images/churn.png"
   },
   {
     title: "Salary Predictor",
     tech: ["Docker", "Streamlit", "Python"],
     description: ["Deployed salary prediction app (90% R2), improving accuracy by 15% via preprocessing.", "Containerized app for cross-platform compatibility."],
     link: "https://github.com/SagarChhabriya/ml-project",
-    image: "/images/predictor.png"
+    image: "./images/predictor.png"
   },
   {
     title: "Cafe Billing App",
     tech: ["C#", "Desktop", "SQL"],
     description: ["Desktop application for managing café billing and transactions.", "Streamlines order processing and generates bills."],
     link: "https://www.linkedin.com/posts/sagar-chhabriya_cafebilling-softwaredevelopment-csharp-activity-7244411974040604672-dk-X",
-    image: "/images/cafe-billing.png"
+    image: "./images/cafe-billing.png"
   },
   {
     title: "Jarvis A.I Assistant",
     tech: ["Python", "TensorFlow", "NLP"],
     description: ["Advanced AI application designed for personal assistance.", "Leverages deep learning for natural language understanding."],
     link: "https://github.com/SagarChhabriya/JarvisCA",
-    image: "/images/jarvis.png"
+    image: "./images/jarvis.png"
   }
 ];
 
