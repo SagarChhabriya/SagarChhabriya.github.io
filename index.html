@@ -1,373 +1,45 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagar Chhabriya</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-
-    <!-- cdnjs: for Font Awesome -->
+    <title>Sagar Chhabriya | AI & ML Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <!-- favicon -->
-    <link rel="icon" href="images/portfolio-2.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.3"
+  }
+}
+</script>
 </head>
-
-<body>
-    <!-- -------------------------------------------------------------Header ------------------------------------------------------ -->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <!-- <img src="images/logo.png" class="logo"> -->
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-solid fa-times" onclick="closemenu()"></i>
-                </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-
-            <div class="header-text">
-                <p>Jr. AI/ML Engineer</p>
-                <h1>Hi, I'm <span>Sagar Chhabriya</span><br> From Pakistan.</h1>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- -------------------------------------------------------------About ------------------------------------------- -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/about-1.jpg" alt="">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About Me</h1>
-                    <p style="color: #fff; line-height: 25px; font-size: 500;">I'm Sagar Chhabriya, a Computer Science
-                        student
-                        passionate
-                        about developing AI
-                        Applications. I
-                        enjoy creating innovative data related solutions and exploring the possibilities of artificial
-                        intelligence. Excited to leverage my skills in these dynamic fields!</p>
-
-                    <div class="tab-titles">
-                        <!-- active links is child class: The underline will be on Skills -->
-                        <!-- onclick events to the links -->
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
-
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Chatbot Development</span><br>LlamaIndex, Langchain </li>
-                            <li><span>Machine Learning</span><br>Feature Engineering, Evaluations Metrics, Algorithms
-                            </li>
-                            <li><span>Python</span><br>Flask Development </li>
-                            <li><span>Web Development</span><br>Web App Development</li>
-                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>2025 - Present</span><br>Developing AI/ML Applciations</li>
-                            <li><span>2024 - 2025</span><br>Designing Web/App Interfacebs</li>
-                            <li><span>2023 - 2024</span><br>Python Flask Development</li>
-                            <li><span>2022 - 2023</span><br>Building Desktop/Java apps </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2022 - Present</span><br>Bachelor's in Computer Science @ Sukkur IBA</li>
-
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ---------------------------------------------------------------Publications------------------------------------------------------------ -->
-
-    <div id="publications">
-        <div class="container">
-            <h2 class="sub-title">My Publications</h2>
-
-            <div class="publications-list">
-                <!-- Publication Card 1 -->
-                <div class="publication">
-                    <img src="images\publication-01.png" alt="Publication Cover">
-                    <div class="publication-info">
-                        <h3>Agentic Retrieval-Augmented Generation: A Compact Review</h3>
-                        <p class="authors">Sagar Chhabriya<sup>*1</sup>, Sumra Khan<sup>2</sup>, Dr. Rizwan Ahmed
-                            Khan<sup>3</sup>, Mansoor Ahmed<sup>1</sup>
-                        </p>
-                        <p class="journal">May, 2025</p>
-                        <div class="publication-links">
-                            <a href="#" class="btn-paper"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="#" class="btn-doi"><i class="fas fa-external-link-alt"></i> DOI</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Publication Card 2 -->
-                <!-- <div class="publication">
-                    <img src="images/publication-2.jpg" alt="Publication Cover">
-                    <div class="publication-info">
-                        <h3>Another Research Paper</h3>
-                        <p class="authors">Author 1, Your Name, Author 3</p>
-                        <p class="journal">Conference Proceedings, 2022</p>
-                        <div class="publication-links">
-                            <a href="#" class="btn-paper"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="#" class="btn-doi"><i class="fas fa-external-link-alt"></i> DOI</a>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Add more publication cards as needed -->
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <!-- ---------------------------------------------------------------Services--------------------------------------------------- -->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p> Crafting visually stunning and user-friendly websites tailored to meet your needs. I focus on
-                        creating seamless user experiences with a keen eye for aesthetics and functionality. From
-                        responsive layouts to interactive elements, I bring your digital vision to life.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>Chatbot Development</h2>
-                    <p>I provide chatbot development services, creating AI-powered chatbots that understand and respond
-                        to user queries efficiently. I specialize in building RAG-based chatbots using LlamaIndex and
-                        LangChain, ensuring accurate and real-time answers from your data.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-app-store"></i>
-                    <h2>Machine Learning</h2>
-                    <p>Developing intelligent solutions powered by machine learning algorithms. From predictive models
-                        to data-driven insights, I leverage AI to solve complex problems and enhance decision-making. I
-                        use cutting-edge techniques to turn data into actionable results.</p>
-                    <a href="#">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ---------------------------------------------------------------Portfolio------------------------------------------------------------ -->
-
-
-    <div id="portfolio">
-        <div class="container">
-            <h2 class="sub-title">My Work</h2>
-            <!-- .work-list>.work*3>img[src="images/work-$.png"] -->
-
-            <div class="work-list">
-
-                <div class="work">
-                    <img src="images/work-7.png" alt="">
-                    <div class="layer">
-                        <h3>RAG Based Chatbot</h3>
-                        <p> A RAG-based chatbot built using LlamaIndex and Gemini 1.5 Flash Pro for intelligent
-                            responses. Hosted on Streamlit, it provides an interactive and efficient conversational
-                            experience.
-                        </p>
-                        <a href="https://ragcall.streamlit.app/" target="_blank">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/work-6.png" alt="">
-                    <div class="layer">
-                        <h3>Package Predictor</h3>
-                        <p> A package predictor built using Scikit-learn that predicts the suitable package based on a
-                            student's CGPA. Hosted with Streamlit, it provides an interactive interface for easy
-                            predictions.
-                        </p>
-                        <a href="https://pkg-predictor.streamlit.app/" target="_blank">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/work-5.png" alt="">
-                    <div class="layer">
-                        <h3>Cafe Billing App</h3>
-                        <p> A C#-based desktop application for managing café billing and transactions. It streamlines
-                            order processing, generates bills, and tracks sales efficiently.
-                        </p>
-                        <a href="https://www.linkedin.com/posts/sagar-chhabriya_cafebilling-softwaredevelopment-csharp-activity-7244411974040604672-dk-X?utm_source=share&utm_medium=member_desktop"
-                            target="_blank">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/work-4.png" alt="">
-                    <div class="layer">
-                        <h3>Static Blog Site</h3>
-                        <p> A static blog site built with HTML and CSS, featuring a simple and responsive design. It
-                            offers a clean layout for sharing posts without the need for dynamic backend functionality.
-                        </p>
-                        <a href="https://responsive-blog-three.vercel.app/" target="_blank">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/work-1.png" alt="">
-                    <div class="layer">
-                        <h3>Attendance Management System</h3>
-                        <p>A web application developed with Java Networking, Swing, AWT, SQL, HTML, CSS, and Derby. It
-                            supports CRUD operations for managing student records and tracking attendance.</p>
-                        <a href="https://github.com/SagarChhabriya/AttendManagCodeAlpha" target="_blank">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/work-2.png" alt="">
-                    <div class="layer">
-                        <h3>Jarvis A.I Assistant</h3>
-                        <p>An advanced AI application designed for personal assistance, developed using Python,
-                            TensorFlow, and natural language processing techniques.</p>
-                        <a href="https://github.com/SagarChhabriya/JarvisCA" target="_blank">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img src="images/work-3.png" alt="">
-                    <div class="layer">
-                        <h3>Email Automater</h3>
-                        <p>A Python-based tool that automates email sending and management. Using libraries like smtplib
-                            and email, it streamlines the process of composing, sending, and scheduling emails, allowing
-                            for efficient and error-free communication.</p>
-                        <a href="https://github.com/SagarChhabriya/emailAuto" target="_blank">
-                            <i class="fa-solid fa-square-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-
-
-
-            </div>
-            <a href="#" class="btn">See more</a>
-
-        </div>
-    </div>
-
-    <!-- -------------------------------------------------------------Contact------------------------------------------------------>
-
-    <div class="contact" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>sagarchhabriya34@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i>In Progress</p>
-
-                    <div class="social-icons">
-                        <a href="https://facebook.com/sagar.chhabriya.71"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://x.com/SagarChhabriya"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="instagram.com/sagar_chhabriya_/"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/sagar-chhabriya/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/SagarChhabriya/"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://stackoverflow.com/users/26491667/sagar-chhabriya"><i
-                                class="fa-brands fa-stack-overflow"></i></a>
-                        <a href="https://medium.com/@sagar-chhabriya"><i class="fa-brands fa-medium"></i></a>
-                    </div>
-
-                    <a href="SagarChhabriyaResume.pdf" class="btn download" download="">Download CV</a>
-
-                </div>
-                <div class="contact-right">
-                    <form name="contact-form" method="post"
-                        action="https://script.google.com/macros/s/AKfycbw5L8AFglZPe1uTUnrTj9Ty5YfbK_SqhpIGC-dY6Q6Fz4PLX7lGIsc85xRYF-DN4RAs/exec">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Type your message here" id=""></textarea>
-                        <button type="submit" class="btn btn-submit">Submit</button>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy; Sagar Chhabriya. Made with <i class="fa-solid fa-heart"></i> by Sagar Chhabriya.</p>
-        </div>
-    </div>
-
-
-
-
-
-    <script>
-
-        // -----------------Script for about-----------------------
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        // when the tab-link get clicked hide the content and underline of active-link. 
-        // And diplay the content and underline of clicked link
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab")
-            }
-
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
-    </script>
-
-    <!-- ---------------------------Script for Sidemenu-------------------------------------------------- -->
-    <script>
-        var sidemenu = document.getElementById("sidemenu");
-        function openmenu() {
-            sidemenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemenu.style.right = "-200px"
-        }
-    </script>
-
+<body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
 </body>
-
 </html>
