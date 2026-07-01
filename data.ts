@@ -11,7 +11,7 @@ import {
 
 export const PERSONAL_INFO = {
   name: "Sagar Chhabriya",
-  title: "AI & Machine Learning Engineer",
+  title: "AI and Machine Learning Engineer",
   email: "sagarchhabriya6@gmail.com",
   phone: "+92-332-336-2473",
   location: "Karachi, Pakistan",
@@ -26,7 +26,7 @@ export const PERSONAL_INFO = {
     stackoverflow: "https://stackoverflow.com/users/26491667/sagar-chhabriya",
     medium: "https://medium.com/@sagar-chhabriya"
   },
-  profile: "My research lies at the intersection of NLP, Information Retrieval, and Machine Learning. I study agentic RAG systems that enable autonomous question-answering and knowledge discovery. I am particularly interested in text mining for insight extraction from unstructured data and retrieval systems that enhance efficiency and relevance in large-scale digital environments."
+  profile: "Computer Science graduate with research experience in Natural Language Processing, Computer Vision, and Generative AI. I work on multimodal learning, information retrieval, and large language models, with hands-on experience building AI systems using RAG, transformer-based models, and deep learning frameworks."
 };
 
 export const SERVICES: ServiceItem[] = [
@@ -49,32 +49,58 @@ export const SERVICES: ServiceItem[] = [
 
 export const PUBLICATIONS: PublicationItem[] = [
   {
+    title: "Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models",
+    authors: "Sumra Khan, Sagar Chhabriya, Aizan Z, Sheeraz A, Amgad Muneer, Anas Zafar, Shaina Raza, Rizwan Qureshi",
+    date: "2026",
+    venue: "arXiv Preprint, Computer Vision and Pattern Recognition (CVPR)",
+    pdfLink: "https://arxiv.org/pdf/2604.08815",
+    doiLink: "#"
+  },
+  {
+    title: "A Modular Empirical Analysis of RAG Pipelines on WikiQA and SQuAD: The Roles of Chunking, Embeddings, Retrieval, and Model Scale",
+    authors: "Sagar Chhabriya, Sumra Khan, Mansoor Ahmed",
+    date: "2026",
+    venue: "Journal: ARRAY (Elsevier)",
+    pdfLink: "https://ceur-ws.org/Vol-4173/T9-8.pdhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339962",
+    doiLink: "#"
+  },
+  {
+    title: "FAST-HASOC 2025: Multimodal and Multilingual Approaches for Hate Speech and Offensive Content Detection in Hindi Memes",
+    authors: "Muhammad Rafi, Saif, ..., Sagar Chhabriya",
+    date: "2025",
+    venue: "CEUR Workshop Proceedings, Vol-4173",
+    pdfLink: "https://ceur-ws.org/Vol-4173/T9-8.pdf",
+    doiLink: "#"
+  },
+  {
     title: "Agentic Retrieval-Augmented Generation: A Compact Review",
     authors: "Sagar Chhabriya, Sumra Khan, Dr. Rizwan Ahmed Khan, Mansoor Ahmed",
-    date: "May 2025",
-    venue: "Presented at 1st ICCA @ Salim Habib University",
-    pdfLink: "#",
+    date: "2025",
+    venue: "Journal of Computers and Intelligent Systems, Vol-3, No-4",
+    pdfLink: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=erpf3JgAAAAJ&citation_for_view=erpf3JgAAAAJ:u-x6o8ySG0sC",
     doiLink: "#"
   }
 ];
 
 export const CONFERENCES: ConferenceItem[] = [
-  { title: "2nd NLP Symposium", date: "July 2025", location: "MAJU Campus, Karachi" },
-  { title: "Modern NLP and South Asian Languages", date: "Nov 2025", location: "C-RAAT Symposium @ MAJU" },
-  { title: "Datasets for Pakistani Languages", date: "Dec 2025", location: "C-RAAT Webinar" }
+  { title: "Datasets for Pakistani Languages", date: "Dec 2025", location: "Registered Attendee, C-RAAT Webinar (Online)" },
+  { title: "Modern NLP and South Asian Languages", date: "Nov 2025", location: "Remote Participant, C-RAAT Symposium @ MAJU, Karachi" },
+  { title: "2nd NLP Symposium", date: "July 2025", location: "In-person Attendee, MAJU Campus, Karachi" },
+  { title: "1st ICCA @ Salim Habib University", date: "May 2025", location: "Presented: Agentic Retrieval-Augmented Generation: A Compact Review" }
 ];
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
     company: "atomcamp",
-    role: "Machine Learning Teaching Assistant",
+    role: "Machine Learning Trainer",
     location: "Islamabad (Remote)",
     period: "Aug 2025 – Present",
     highlights: [
-      "Mentored 80+ learners and guided 45+ students to deploy end-to-end ML projects.",
-      "Designed capstone projects and technical guides for environment setup (Docker/Conda).",
-      "Conducted weekly live sessions on NLP and MLOps; mentored students in CI/CD.",
-      "Led MLOps modules covering data acquisition, experiment tracking (W&B), and GCP workflows."
+      "Mentored 110+ learners and guided 55+ students to deploy end-to-end machine learning projects.",
+      "Designed capstone projects and authored technical guides for Docker and Conda environment setup.",
+      "Conduct weekly live sessions on ML, DL, NLP, and MLOps; mentor students in Dockerization and CI/CD.",
+      "Lead MLOps modules covering data acquisition, experiment tracking (W&B), and GCP workflows.",
+      "Provide 1:1 technical mentorship and code reviews to ensure consistent student progress and code quality."
     ]
   },
   {
@@ -83,10 +109,11 @@ export const EXPERIENCE: ExperienceItem[] = [
     location: "Karachi (Remote)",
     period: "Dec 2025 – Feb 2026",
     highlights: [
-      "Architected production-ready AQI forecasting platform using FastAPI and MongoDB Atlas.",
+      "Architected a production-ready AQI forecasting platform using Python, FastAPI, Streamlit, and MongoDB Atlas.",
       "Engineered automated pipelines for hourly data ingestion and daily retraining via GitHub Actions.",
       "Integrated feature store with time-series preprocessing (rolling windows, lag features).",
-      "Deployed ensemble models (RF, XGBoost, LightGBM) via CI/CD to Railway."
+      "Deployed ensemble models (RF, XGBoost, LightGBM) via CI/CD to Railway with a FastAPI backend.",
+      "Built and deployed an interactive AQI dashboard on Streamlit Community Cloud for real-time monitoring."
     ]
   },
   {
@@ -97,7 +124,8 @@ export const EXPERIENCE: ExperienceItem[] = [
     highlights: [
       "Project: Automatic multi-modal classification of religious hate content from social media (HASOC 2025).",
       "Engineered custom multilingual lexical resources improving model performance by 2-5%.",
-      "Fine-tuned Multilingual BERT (mBERT) against ML baselines (SVM, Noive Bayes).",
+      "Fine-tuned Multilingual BERT (mBERT) against ML baselines (SVM, Naive Bayes).",
+      "Conducted comprehensive literature reviews on multilingual NLP to inform model design strategies.",
       "Leveraged GPU-accelerated frameworks (TensorFlow & PyTorch) for large-scale experimentation."
     ]
   },
@@ -109,7 +137,9 @@ export const EXPERIENCE: ExperienceItem[] = [
     highlights: [
       "Delivered 4-month C++ curriculum to 15+ grade IX-XII students.",
       "Designed 25+ hands-on coding exercises building structured programming fundamentals.",
-      "Created algorithmic challenges boosting student LeetCode solve rates by 35%."
+      "Created algorithmic challenges boosting student LeetCode solve rates by 35%.",
+      "Led weekly code reviews and debugging workshops for intermediate C++ proficiency.",
+      "Achieved 90% student advancement to advanced programming concepts and projects."
     ]
   }
 ];
@@ -125,44 +155,30 @@ export const PROJECTS: ProjectItem[] = [
   {
     title: "Unify",
     tech: ["Python", "Streamlit", "FAISS", "GitHub Actions"],
-    description: ["Architected RAG chatbot for university queries by scraping web data.", "Integrated semantic search to handle ambiguous queries."],
+    description: ["Architected a RAG chatbot for university queries by scraping web data and structuring JSONL QA pairs.", "Deployed on Streamlit Cloud with FAISS and automated CI/CD for continuous updates.", "Integrated semantic search to handle ambiguous student queries with high precision."],
     link: "https://github.com/SagarChhabriya/",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
   },
   {
     title: "atombot",
     tech: ["Python", "Streamlit", "FAISS", "Gemini-flash-2.0"],
-    description: ["Engineered RAG assistant automating student FAQs regarding course content.", "Designed robust prompt templates to reduce hallucination."],
+    description: ["Engineered a RAG assistant automating student FAQs for course content and coding assignments.", "Implemented CI/CD workflow for automated Streamlit deployment to support 24/7 availability.", "Designed robust prompt templates to reduce hallucination and keep responses curriculum-relevant."],
     link: "https://github.com/SagarChhabriya/atombot",
     image: "/images/atombot.png"
   },
   {
     title: "Churn Predictor",
     tech: ["Docker", "GCP", "W&B", "GitHub Actions"],
-    description: ["Developed churn prediction classifier, tracking experiments via W&B.", "Productionized workflow via Docker and CI/CD to GCP Artifact Registry."],
+    description: ["Developed churn prediction classifier and tracked experiments via W&B while serving predictions on Streamlit.", "Productionized the workflow via Docker and CI/CD (GitHub Actions -> GCP Artifact Registry -> Cloud Run).", "Integrated Confusion Matrix and ROC metrics into the dashboard for stakeholder analysis."],
     link: "https://github.com/SagarChhabriya/mlops-project",
     image: "/images/churn.png"
   },
   {
     title: "Salary Predictor",
     tech: ["Docker", "Streamlit", "Python"],
-    description: ["Deployed salary prediction app (90% R2), improving accuracy by 15% via preprocessing.", "Containerized app for cross-platform compatibility."],
+    description: ["Deployed a salary prediction app (90% R2), improving accuracy by 15% through comprehensive preprocessing.", "Containerized the app with Docker and implemented CI/CD for cross-platform compatibility.", "Added interactive Plotly visualizations to analyze salary trends across demographics."],
     link: "https://github.com/SagarChhabriya/ml-project",
     image: "/images/predictor.png"
-  },
-  {
-    title: "Cafe Billing App",
-    tech: ["C#", "Desktop", "SQL"],
-    description: ["Desktop application for managing café billing and transactions.", "Streamlines order processing and generates bills."],
-    link: "https://www.linkedin.com/posts/sagar-chhabriya_cafebilling-softwaredevelopment-csharp-activity-7244411974040604672-dk-X",
-    image: "/images/cafe-billing.png"
-  },
-  {
-    title: "Jarvis A.I Assistant",
-    tech: ["Python", "TensorFlow", "NLP"],
-    description: ["Advanced AI application designed for personal assistance.", "Leverages deep learning for natural language understanding."],
-    link: "https://github.com/SagarChhabriya/JarvisCA",
-    image: "/images/jarvis.png"
   }
 ];
 
@@ -177,17 +193,19 @@ export const SKILLS: SkillCategory[] = [
 export const EDUCATION = {
   school: "Sukkur IBA University",
   degree: "Bachelor of Science in Computer Science",
-  cgpa: "3.67/4.0",
-  period: "Sept 2022 – May 2026 (Expected)",
+  cgpa: "3.70/4.0",
+  period: "Sept 2022 – May 2026",
   location: "Sukkur, Pakistan"
 };
 
 export const CERTIFICATIONS: CertificationItem[] = [
+  { title: "Hacktoberfest 2025 Super Contributor", description: "Recognized as a top open-source contributor during Hacktoberfest." },
   { title: "Data Science & AI Bootcamp", description: "atomcamp: 4-month specialized training in ML, DL, NLP, and MLOps." },
+  { title: "Master Trainee PVE (EU-funded)", description: "Trained 185+ students in violent extremism prevention." },
   { title: "GitHub Foundations Exam", description: "Certified in Git, GitHub Actions, and project management." },
   { title: "DigiSkills Training", description: "Pakistan government program: Freelancing and WordPress Certification." },
-  { title: "Developing Python Packages", description: "DataCamp certification in PyPI publishing & package engineering." },
   { title: "AWS DeepRacer League", description: "Competed in autonomous racing using RL models." },
-  { title: "Aspire Institute Leaders Program 2024", description: "Leadership training for global social impact." },
-  { title: "Prime Minister’s Laptop Award 2023", description: "National merit recipient for academic excellence." }
+  { title: "Aspire Institute Leaders Program 2024", description: "Successfully completed Cohort 1 leadership training." },
+  { title: "Prime Minister’s Laptop Award 2023", description: "National merit recipient for academic excellence in Computer Science." },
+  { title: "Book Review Competition Winner 2022", description: "Secured 1st place among 17 sections across 5 SIBAU campuses." }
 ];
