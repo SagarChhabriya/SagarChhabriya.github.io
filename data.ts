@@ -1,211 +1,273 @@
-
 import {
+  PublicationItem,
   ExperienceItem,
   ProjectItem,
-  SkillCategory,
-  CertificationItem,
-  ServiceItem,
-  PublicationItem,
-  ConferenceItem
+  AwardItem,
 } from './types';
 
-export const PERSONAL_INFO = {
-  name: "Sagar Chhabriya",
-  title: "AI and Machine Learning Engineer",
-  email: "sagarchhabriya6@gmail.com",
-  phone: "+92-332-336-2473",
-  location: "Karachi, Pakistan",
-  linkedin: "https://linkedin.com/in/sagar-chhabriya",
-  github: "https://github.com/SagarChhabriya",
-  website: "https://SagarChhabriya.github.io/",
-  profileImage: "https://github.com/SagarChhabriya.png",
-  socials: {
-    facebook: "https://facebook.com/sagar.chhabriya.71",
-    twitter: "https://x.com/SagarChhabriya",
-    instagram: "https://instagram.com/sagar_chhabriya_/",
-    stackoverflow: "https://stackoverflow.com/users/26491667/sagar-chhabriya",
-    medium: "https://medium.com/@sagar-chhabriya"
+export const PERSONAL = {
+  name: 'Sagar Chhabriya',
+  tagline: 'Aspiring PhD Student · Multimodal ML & Trustworthy AI',
+  email: 'sagarchhabriya34@gmail.com',
+  affiliation: 'Sukkur IBA University',
+  location: 'Sukkur, Pakistan',
+  profileImage: 'https://github.com/SagarChhabriya.png',
+  cv: '/SagarChhabriyaResume.pdf',
+  links: {
+    email: 'mailto:sagarchhabriya34@gmail.com',
+    github: 'https://github.com/SagarChhabriya',
+    linkedin: 'https://www.linkedin.com/in/sagar-chhabriya',
+    scholar: 'https://scholar.google.com/citations?user=erpf3JgAAAAJ&hl=en',
+    portfolio: 'https://sagarchhabriya.github.io',
   },
-  profile: "Computer Science graduate with research experience in Natural Language Processing, Computer Vision, and Generative AI. I work on multimodal learning, information retrieval, and large language models, with hands-on experience building AI systems using RAG, transformer-based models, and deep learning frameworks."
+  bio: `I am a final-year BS Computer Science student at Sukkur IBA University (Gold Medalist, CGPA 3.71/4.0), applying for CS PhD programs for Fall 2027. My research focuses on multimodal machine learning, vision–language models, and trustworthy AI—especially medical image–text understanding, retrieval-augmented generation, and rigorous evaluation of language models.`,
+  interests: [
+    'Multimodal Machine Learning',
+    'Vision–Language Models',
+    'Trustworthy AI',
+    'Medical Image and Image–Text Understanding',
+    'Retrieval-Augmented Generation',
+    'Evaluation of Language Models',
+  ],
 };
 
-export const SERVICES: ServiceItem[] = [
-  {
-    title: "Web Design",
-    description: "Crafting visually stunning and user-friendly websites tailored to meet your needs. I focus on creating seamless user experiences with a keen eye for aesthetics and functionality.",
-    icon: "fa-solid fa-code"
-  },
-  {
-    title: "Chatbot Development",
-    description: "Specializing in building AI-powered RAG-based chatbots using LlamaIndex and LangChain, ensuring accurate and real-time answers from your proprietary data.",
-    icon: "fa-solid fa-robot"
-  },
-  {
-    title: "Machine Learning",
-    description: "Developing intelligent solutions powered by algorithms. From predictive models to data-driven insights, I leverage AI to solve complex problems and enhance decision-making.",
-    icon: "fa-solid fa-brain"
-  }
-];
+export const EDUCATION = {
+  degree: 'Bachelor of Science in Computer Science',
+  school: 'Sukkur IBA University',
+  period: 'Sept 2022 – Aug 2026',
+  location: 'Sukkur, Pakistan',
+  cgpa: '3.71/4.0',
+  distinction: 'Gold Medalist',
+  coursework:
+    'Machine Learning, Artificial Intelligence, Computer Vision, Data Science, Probability and Statistics, Linear Algebra, Design and Analysis of Algorithms, Human–Computer Interaction',
+};
 
 export const PUBLICATIONS: PublicationItem[] = [
   {
-    title: "Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models",
-    authors: "Sumra Khan, Sagar Chhabriya, Aizan Z, Sheeraz A, Amgad Muneer, Anas Zafar, Shaina Raza, Rizwan Qureshi",
-    date: "2026",
-    venue: "arXiv Preprint, Computer Vision and Pattern Recognition (CVPR)",
-    pdfLink: "https://arxiv.org/pdf/2604.08815",
-    doiLink: "#"
+    title:
+      'A Modular Empirical Analysis of RAG Pipelines on WikiQA and SQuAD: The Roles of Chunking, Embeddings, Retrieval, and Model Scale',
+    authors:
+      'Sagar Chhabriya, Sumra Khan, Inad Alqurashi, Mansoor Ahmed, Rizwan Qureshi',
+    venue: 'Under minor revision',
+    year: '2026',
+    note: 'First author and corresponding author',
+    links: [
+      {
+        label: 'Preprint',
+        url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339962',
+      },
+      {
+        label: 'Code',
+        url: 'https://github.com/SagarChhabriya/empirical-analysis-of-RAG',
+      },
+    ],
   },
   {
-    title: "A Modular Empirical Analysis of RAG Pipelines on WikiQA and SQuAD: The Roles of Chunking, Embeddings, Retrieval, and Model Scale",
-    authors: "Sagar Chhabriya, Sumra Khan, Mansoor Ahmed",
-    date: "2026",
-    venue: "Journal: ARRAY (Elsevier)",
-    pdfLink: "https://ceur-ws.org/Vol-4173/T9-8.pdhttps://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339962",
-    doiLink: "#"
+    title:
+      'Hirebase: A Cloud-Native Platform for AI-Assisted Recruitment with a Voice Interview Agent',
+    authors: 'Sagar Chhabriya, H. Dhingana, N. N. Dahar, A. Qadir',
+    venue:
+      'Bulletin of Toraigyrov University, Physics and Mathematics Series',
+    year: '2026',
+    links: [
+      {
+        label: 'DOI',
+        url: 'https://doi.org/10.48081/BTOUPhMath3.2026/30-44',
+      },
+    ],
   },
   {
-    title: "FAST-HASOC 2025: Multimodal and Multilingual Approaches for Hate Speech and Offensive Content Detection in Hindi Memes",
-    authors: "Muhammad Rafi, Saif, ..., Sagar Chhabriya",
-    date: "2025",
-    venue: "CEUR Workshop Proceedings, Vol-4173",
-    pdfLink: "https://ceur-ws.org/Vol-4173/T9-8.pdf",
-    doiLink: "#"
+    title:
+      'Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models',
+    authors:
+      'Sumra Khan, Sagar Chhabriya, Aizan Zafar, Sheeraz Arif, Amgad Muneer, Anas Zafar, Shaina Raza, Rizwan Qureshi',
+    venue: 'KnowledgeMR Workshop @ CVPR 2026 (poster); arXiv:2604.08815',
+    year: '2026',
+    note: 'Second author',
+    links: [
+      { label: 'arXiv', url: 'https://arxiv.org/abs/2604.08815' },
+    ],
   },
   {
-    title: "Agentic Retrieval-Augmented Generation: A Compact Review",
-    authors: "Sagar Chhabriya, Sumra Khan, Dr. Rizwan Ahmed Khan, Mansoor Ahmed",
-    date: "2025",
-    venue: "Journal of Computers and Intelligent Systems, Vol-3, No-4",
-    pdfLink: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=erpf3JgAAAAJ&citation_for_view=erpf3JgAAAAJ:u-x6o8ySG0sC",
-    doiLink: "#"
-  }
+    title: 'Agentic Retrieval-Augmented Generation: A Compact Review',
+    authors:
+      'Sagar Chhabriya, Sumra Khan, Rizwan Ahmed Khan, Mansoor Ahmed',
+    venue:
+      'Journal of Computers and Intelligent Systems, 3(4):283–296',
+    year: '2025',
+    links: [
+      {
+        label: 'Paper',
+        url: 'https://journals.iub.edu.pk/index.php/JCIS/article/view/4369',
+      },
+    ],
+  },
+  {
+    title:
+      'FAST-HASOC 2025: Multimodal and Multilingual Approaches for Hate Speech and Offensive Content Detection in Hindi Memes',
+    authors:
+      'Muhammad Rafi, Saif Ur Rehman Awan, Ramsha Jat, Aiman Falak, Fatimah Ansari, Ahmed Raza, Sagar Chhabriya',
+    venue: 'FIRE 2025 Working Notes, CEUR-WS Vol. 4173, pp. 625–631',
+    year: '2025',
+    links: [
+      { label: 'PDF', url: 'https://ceur-ws.org/Vol-4173/T9-8.pdf' },
+    ],
+  },
 ];
 
-export const CONFERENCES: ConferenceItem[] = [
-  { title: "Datasets for Pakistani Languages", date: "Dec 2025", location: "Registered Attendee, C-RAAT Webinar (Online)" },
-  { title: "Modern NLP and South Asian Languages", date: "Nov 2025", location: "Remote Participant, C-RAAT Symposium @ MAJU, Karachi" },
-  { title: "2nd NLP Symposium", date: "July 2025", location: "In-person Attendee, MAJU Campus, Karachi" },
-  { title: "1st ICCA @ Salim Habib University", date: "May 2025", location: "Presented: Agentic Retrieval-Augmented Generation: A Compact Review" }
+export const RESEARCH: ExperienceItem[] = [
+  {
+    title: 'Context-Aligned Reasoning for Medical Vision-Language Models',
+    org: 'KnowledgeMR @ CVPR 2026 (poster) · Second author',
+    period: 'Apr 2026',
+    venueLink: {
+      label: 'arXiv',
+      url: 'https://arxiv.org/abs/2604.08815',
+    },
+    bullets: [
+      'Co-authored a framework in which a frozen vision–language model must reconcile radiomic statistics, Grad-CAM activations, and vocabulary-grounded cues before returning a structured chest X-ray answer with evidence, uncertainty, and safety notes—reducing fluent but weakly grounded conclusions.',
+      'Conducted cross-dataset evaluation on CheXpert; radiomic features achieved AUC 0.71 while text embeddings reached 0.50.',
+      'Found that image-plus-text conditioning reduced average hallucinated keywords from 1.14 to 0.25; tool-augmented reasoning shortened evidence explanations from 19.4 to 15.3 words without increasing model confidence.',
+      'Designed the methodology figure, quantitative tables, and conference poster.',
+    ],
+  },
+  {
+    title:
+      'A Modular Empirical Analysis of RAG Pipelines on WikiQA and SQuAD',
+    org: 'First author and corresponding author · Under minor revision',
+    period: '2025–2026',
+    venueLink: {
+      label: 'SSRN',
+      url: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339962',
+    },
+    bullets: [
+      'Isolated four design levers—6 chunking strategies, 9 embedding models, dense/BM25/hybrid retrieval, and 7 generators (82M–7B)—across 44 main configurations and 18 ablations on WikiQA and SQuAD.',
+      'Built a reproducible BEIR-style benchmark showing that corpus construction errors alone can force Exact Match to zero regardless of the generator.',
+      'Reported retrieval metrics (Hit@k, MRR, answer-in-context) beside answer quality with 95% bootstrap intervals and paired significance tests.',
+      'Found that the generator dominates (SQuAD EM 0.00 → 0.65 from 82M to 3B instruction-tuned), BM25 trails dense retrieval (Hit@5 0.754 vs 0.902), and chunking has no significant effect.',
+    ],
+  },
+  {
+    title: 'Sentiment Classification of Hindi–English Memes (HASOC 2025)',
+    org: 'NLP Research Assistant, VSL Lab, FAST-NUCES',
+    period: 'June 2025 – Aug 2025',
+    location: 'Karachi, Pakistan',
+    venueLink: {
+      label: 'FIRE Working Notes',
+      url: 'https://ceur-ws.org/Vol-4173/T9-8.pdf',
+    },
+    bullets: [
+      'Developed a TF-IDF and Random Forest pipeline for ternary sentiment classification of noisy OCR-extracted Hindi–Hinglish meme text (1,133 training samples).',
+      'Diagnosed weak baselines via manual instance inspection (OCR noise, code-mixing, task-specific patterns) and curated Hindi–Hinglish stopword and offensive-term dictionaries.',
+      'Improved macro-F1 from ~0.64 to 0.70 on the test set with five-fold stratified cross-validation; co-authored the FIRE 2025 Working Notes paper.',
+    ],
+  },
 ];
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    company: "atomcamp",
-    role: "Machine Learning Trainer",
-    location: "Islamabad (Remote)",
-    period: "Aug 2025 – Present",
-    highlights: [
-      "Mentored 110+ learners and guided 55+ students to deploy end-to-end machine learning projects.",
-      "Designed capstone projects and authored technical guides for Docker and Conda environment setup.",
-      "Conduct weekly live sessions on ML, DL, NLP, and MLOps; mentor students in Dockerization and CI/CD.",
-      "Lead MLOps modules covering data acquisition, experiment tracking (W&B), and GCP workflows.",
-      "Provide 1:1 technical mentorship and code reviews to ensure consistent student progress and code quality."
-    ]
+    title: 'Machine Learning Trainer',
+    org: 'atomcamp',
+    period: 'Aug 2025 – Present',
+    location: 'Islamabad, Pakistan',
+    bullets: [
+      'Mentored 80+ learners and guided 30+ students through end-to-end AI/ML projects and deployments.',
+      'Conduct weekly sessions on ML, DL, NLP, Generative AI, MLOps, Docker, CI/CD, and cloud deployment.',
+      'Designed capstone projects, coding labs, and technical guides; provide 1:1 mentorship and code reviews.',
+    ],
   },
   {
-    company: "10Pearls",
-    role: "Data Science Intern (Shine Program)",
-    location: "Karachi (Remote)",
-    period: "Dec 2025 – Feb 2026",
-    highlights: [
-      "Architected a production-ready AQI forecasting platform using Python, FastAPI, Streamlit, and MongoDB Atlas.",
-      "Engineered automated pipelines for hourly data ingestion and daily retraining via GitHub Actions.",
-      "Integrated feature store with time-series preprocessing (rolling windows, lag features).",
-      "Deployed ensemble models (RF, XGBoost, LightGBM) via CI/CD to Railway with a FastAPI backend.",
-      "Built and deployed an interactive AQI dashboard on Streamlit Community Cloud for real-time monitoring."
-    ]
+    title: 'Programming Fundamentals Course Instructor',
+    org: 'Times Tech Computer Center',
+    period: 'Feb 2025 – May 2025',
+    location: 'Kandhkot, Pakistan',
+    bullets: [
+      'Delivered a four-month C++ course to 15+ secondary-school students covering core syntax and structured programming.',
+      'Designed 25+ hands-on exercises and debugging activities.',
+    ],
   },
-  {
-    company: "FAST-NUCES",
-    role: "NLP Research Assistant (Full-time)",
-    location: "Karachi (On-Site)",
-    period: "June 2025 – Aug 2025",
-    highlights: [
-      "Project: Automatic multi-modal classification of religious hate content from social media (HASOC 2025).",
-      "Engineered custom multilingual lexical resources improving model performance by 2-5%.",
-      "Fine-tuned Multilingual BERT (mBERT) against ML baselines (SVM, Naive Bayes).",
-      "Conducted comprehensive literature reviews on multilingual NLP to inform model design strategies.",
-      "Leveraged GPU-accelerated frameworks (TensorFlow & PyTorch) for large-scale experimentation."
-    ]
-  },
-  {
-    company: "Times Tech Computer Center",
-    role: "Programming Fundamentals Course Instructor",
-    location: "Kandhkot, Sindh",
-    period: "Feb 2025 – May 2025",
-    highlights: [
-      "Delivered 4-month C++ curriculum to 15+ grade IX-XII students.",
-      "Designed 25+ hands-on coding exercises building structured programming fundamentals.",
-      "Created algorithmic challenges boosting student LeetCode solve rates by 35%.",
-      "Led weekly code reviews and debugging workshops for intermediate C++ proficiency.",
-      "Achieved 90% student advancement to advanced programming concepts and projects."
-    ]
-  }
 ];
 
 export const PROJECTS: ProjectItem[] = [
   {
-    title: "10PearlsAQI",
-    tech: ["WeatherAPI", "FastAPI", "Docker", "MongoDB", "GitHub Actions"],
-    description: ["Architected AQI prediction system with automated hourly data ingestion.", "Implemented daily model retraining pipelines and versioned models."],
-    link: "https://github.com/SagarChhabriya/10PearlsAQI",
-    image: "/images/10pearls.png"
+    title: 'Hire-Base (AI-Assisted HR & Recruitment Platform)',
+    tech: 'React, FastAPI, PostgreSQL, Supabase, Azure, LiveKit, Groq, Deepgram',
+    link: 'https://github.com/SagarChhabriya/agentic-hr',
+    bullets: [
+      'End-to-end HR platform for onboarding, hiring, assessments, interviews, and recruiter insights.',
+      'AI voice-interview agent with LiveKit, Groq/Llama 3.1, Deepgram STT/TTS, and VAD; CI/CD via GitHub Actions.',
+    ],
   },
   {
-    title: "Unify",
-    tech: ["Python", "Streamlit", "FAISS", "GitHub Actions"],
-    description: ["Architected a RAG chatbot for university queries by scraping web data and structuring JSONL QA pairs.", "Deployed on Streamlit Cloud with FAISS and automated CI/CD for continuous updates.", "Integrated semantic search to handle ambiguous student queries with high precision."],
-    link: "https://github.com/SagarChhabriya/",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+    title: 'Graph Neural Networks for Aerodynamic Drag Prediction',
+    tech: 'PyTorch, PyTorch Geometric, GraphSAGE, CFD',
+    bullets: [
+      'GNN framework predicting aerodynamic drag from airfoil CFD meshes (nodal velocities + connectivity).',
+      'GraphSAGE with Top-K pooling; test R² 0.9837, outperforming CNN and shallow regression baselines.',
+    ],
   },
-  {
-    title: "atombot",
-    tech: ["Python", "Streamlit", "FAISS", "Gemini-flash-2.0"],
-    description: ["Engineered a RAG assistant automating student FAQs for course content and coding assignments.", "Implemented CI/CD workflow for automated Streamlit deployment to support 24/7 availability.", "Designed robust prompt templates to reduce hallucination and keep responses curriculum-relevant."],
-    link: "https://github.com/SagarChhabriya/atombot",
-    image: "/images/atombot.png"
-  },
-  {
-    title: "Churn Predictor",
-    tech: ["Docker", "GCP", "W&B", "GitHub Actions"],
-    description: ["Developed churn prediction classifier and tracked experiments via W&B while serving predictions on Streamlit.", "Productionized the workflow via Docker and CI/CD (GitHub Actions -> GCP Artifact Registry -> Cloud Run).", "Integrated Confusion Matrix and ROC metrics into the dashboard for stakeholder analysis."],
-    link: "https://github.com/SagarChhabriya/mlops-project",
-    image: "/images/churn.png"
-  },
-  {
-    title: "Salary Predictor",
-    tech: ["Docker", "Streamlit", "Python"],
-    description: ["Deployed a salary prediction app (90% R2), improving accuracy by 15% through comprehensive preprocessing.", "Containerized the app with Docker and implemented CI/CD for cross-platform compatibility.", "Added interactive Plotly visualizations to analyze salary trends across demographics."],
-    link: "https://github.com/SagarChhabriya/ml-project",
-    image: "/images/predictor.png"
-  }
 ];
 
-export const SKILLS: SkillCategory[] = [
-  { name: "Programming", skills: ["Python", "MySQL", "C++", "Java"] },
-  { name: "GenAI & LLMs", skills: ["RAG", "LangChain", "LangGraph", "LlamaIndex", "CrewAI", "Gemini API", "FAISS", "Pinecone", "Chroma"] },
-  { name: "ML/DL Frameworks", skills: ["TensorFlow", "Keras", "PyTorch", "Scikit-learn", "XGBoost", "LightGBM", "NLTK", "spaCy"] },
-  { name: "MLOps & Cloud", skills: ["Docker", "Kubernetes", "GitHub Actions", "MLflow", "W&B", "DVC", "GCP", "AWS", "Azure"] },
-  { name: "Web & Dev Tools", skills: ["FastAPI", "Streamlit", "Flask", "Git", "Postman", "Web Design"] }
+export const CONFERENCES = [
+  {
+    title: '1st ICCA @ Salim Habib University',
+    detail:
+      'Presented: Agentic Retrieval-Augmented Generation: A Compact Review',
+    date: 'May 2025',
+  },
 ];
 
-export const EDUCATION = {
-  school: "Sukkur IBA University",
-  degree: "Bachelor of Science in Computer Science",
-  cgpa: "3.70/4.0",
-  period: "Sept 2022 – May 2026",
-  location: "Sukkur, Pakistan"
-};
+export const AWARDS: AwardItem[] = [
+  {
+    title: 'Gold Medalist',
+    detail: 'BS Computer Science, Sukkur IBA University',
+  },
+  {
+    title: 'Hacktoberfest 2025 Super Contributor',
+    detail: 'Recognized open-source contributor',
+    link: 'https://www.holopin.io/@sagarchhabriya3#badges',
+  },
+  {
+    title: 'Master Trainee PVE (EU-funded)',
+    detail: 'Trained 185+ students in violent extremism prevention',
+    link: 'https://www.linkedin.com/posts/sagar-chhabriya_activity-7296574905934909440-XMnX',
+  },
+  {
+    title: 'GitHub Foundations Exam',
+    detail: 'Certified in Git, GitHub Actions, and project management',
+    link: 'https://www.credly.com/badges/ad76b653-1048-4090-bcf6-605bf97148ad/',
+  },
+  {
+    title: 'Aspire Institute Leaders Program 2024',
+    detail: 'Completed Cohort 1 leadership training',
+  },
+  {
+    title: "Prime Minister's Laptop Award 2023",
+    detail: 'National merit recipient for academic excellence in Computer Science',
+  },
+  {
+    title: 'Book Review Competition Winner 2022',
+    detail: '1st place among 17 sections across 5 SIBAU campuses',
+  },
+];
 
-export const CERTIFICATIONS: CertificationItem[] = [
-  { title: "Hacktoberfest 2025 Super Contributor", description: "Recognized as a top open-source contributor during Hacktoberfest." },
-  { title: "Data Science & AI Bootcamp", description: "atomcamp: 4-month specialized training in ML, DL, NLP, and MLOps." },
-  { title: "Master Trainee PVE (EU-funded)", description: "Trained 185+ students in violent extremism prevention." },
-  { title: "GitHub Foundations Exam", description: "Certified in Git, GitHub Actions, and project management." },
-  { title: "DigiSkills Training", description: "Pakistan government program: Freelancing and WordPress Certification." },
-  { title: "AWS DeepRacer League", description: "Competed in autonomous racing using RL models." },
-  { title: "Aspire Institute Leaders Program 2024", description: "Successfully completed Cohort 1 leadership training." },
-  { title: "Prime Minister’s Laptop Award 2023", description: "National merit recipient for academic excellence in Computer Science." },
-  { title: "Book Review Competition Winner 2022", description: "Secured 1st place among 17 sections across 5 SIBAU campuses." }
+export const SKILLS = [
+  {
+    name: 'Programming',
+    items: 'Python, C++, Java',
+  },
+  {
+    name: 'ML & NLP',
+    items:
+      'Scikit-learn, PyTorch, TensorFlow/Keras, NLTK, Hugging Face Transformers, FAISS, LangChain',
+  },
+  {
+    name: 'MLOps & Cloud',
+    items:
+      'Docker, GitHub Actions, W&B, GCP Cloud Run, AWS (EC2, S3), Azure Web Apps',
+  },
+  {
+    name: 'Web & Tools',
+    items: 'FastAPI, Streamlit, Git, GitHub Codespaces',
+  },
 ];

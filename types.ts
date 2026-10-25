@@ -1,47 +1,30 @@
+export interface PublicationItem {
+  title: string;
+  authors: string; // use **Name** markers via boldAuthors helper, or HTML-ready string with name bolded in data
+  venue: string;
+  year: string;
+  links: { label: string; url: string }[];
+  note?: string;
+}
 
 export interface ExperienceItem {
-  company: string;
-  role: string;
-  location: string;
+  title: string;
+  org: string;
   period: string;
-  highlights: string[];
+  location?: string;
+  venueLink?: { label: string; url: string };
+  bullets: string[];
 }
 
 export interface ProjectItem {
   title: string;
-  tech: string[];
-  description: string[];
-  link: string;
-  image?: string;
+  tech: string;
+  link?: string;
+  bullets: string[];
 }
 
-export interface SkillCategory {
-  name: string;
-  skills: string[];
-}
-
-export interface CertificationItem {
+export interface AwardItem {
   title: string;
-  description: string;
-}
-
-export interface ServiceItem {
-  title: string;
-  description: string;
-  icon: string;
-}
-
-export interface PublicationItem {
-  title: string;
-  authors: string;
-  date: string;
-  venue: string;
-  pdfLink?: string;
-  doiLink?: string;
-}
-
-export interface ConferenceItem {
-  title: string;
-  date: string;
-  location: string;
+  detail: string;
+  link?: string;
 }
