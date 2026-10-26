@@ -1,21 +1,18 @@
 # Sagar Chhabriya — Academic Homepage
 
-Simple single-page research portfolio for CS PhD applications (Fall 2027).
+Simple static research homepage for CS PhD applications (Fall 2027).
 
 **Live:** [sagarchhabriya.github.io](https://sagarchhabriya.github.io)
 
-## Develop
+## Edit
 
-```bash
-npm install
-npm run dev
-```
+- Content & layout: `index.html`
+- Styles: `style.css`
+- CV PDF: `public/SagarChhabriyaResume.pdf`
 
-## Deploy
-
-Push to `main`. GitHub Actions builds with Vite and deploys to GitHub Pages.
+No build step. GitHub Pages serves the repo root on `main`.
 
 ## Archive
 
-The previous developer-oriented portfolio is preserved at
-[`archive/developer-portfolio-2026/`](./archive/developer-portfolio-2026/).
+- Developer portfolio: `archive/developer-portfolio-2026/`
+- React/Vite source kept at repo root (`App.tsx`, `data.ts`, …) for optional local preview via `npm run dev`, but production is the static `index.html`.

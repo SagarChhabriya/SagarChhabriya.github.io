@@ -1,50 +1,22 @@
+# GitHub Pages for this repo is configured to deploy from the main branch root
+# (static index.html + style.css). No build step is required.
+#
+# This workflow is intentionally a no-op placeholder so older Action-based
+# deploys do not overwrite the branch-deployed static site with a Vite dist
+# that Pages settings may not be using.
+#
+# To re-enable Vite builds later:
+# 1. Repo Settings → Pages → Source = "GitHub Actions"
+# 2. Restore a build + actions/deploy-pages job here
 
-name: Deploy to GitHub Pages
+name: Pages note
 
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  note:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Static site
+        run: echo "Site is served as static files from the main branch root."

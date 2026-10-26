@@ -8,16 +8,277 @@
     name="description"
     content="Sagar Chhabriya — CS researcher working on multimodal ML, vision-language models, trustworthy AI, and RAG. PhD applicant for Fall 2027."
   />
-  <link rel="icon" href="/images/portfolio-2.png" type="image/png" />
+  <link rel="icon" href="public/images/portfolio-2.png" type="image/png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:ital,wght@0,500;0,600;1,500&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="root"></div>
-  <script type="module" src="./index.tsx"></script>
+  <div class="page">
+    <header class="hero">
+      <img
+        class="avatar"
+        src="https://github.com/SagarChhabriya.png"
+        alt="Sagar Chhabriya"
+        width="140"
+        height="140"
+      />
+      <div class="hero-text">
+        <h1>Sagar Chhabriya</h1>
+        <p class="tagline">Aspiring PhD Student · Multimodal ML &amp; Trustworthy AI</p>
+        <p class="affiliation">Sukkur IBA University · Sukkur, Pakistan</p>
+        <nav class="links" aria-label="Profile links">
+          <a href="mailto:sagarchhabriya34@gmail.com">Email</a>
+          <span class="sep">·</span>
+          <a href="public/SagarChhabriyaResume.pdf" target="_blank" rel="noreferrer">CV</a>
+          <span class="sep">·</span>
+          <a href="https://scholar.google.com/citations?user=erpf3JgAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/SagarChhabriya" target="_blank" rel="noreferrer">GitHub</a>
+          <span class="sep">·</span>
+          <a href="https://www.linkedin.com/in/sagar-chhabriya" target="_blank" rel="noreferrer">LinkedIn</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I am a final-year BS Computer Science student at Sukkur IBA University
+          (Gold Medalist, CGPA 3.71/4.0), applying for CS PhD programs for Fall 2027.
+          My research focuses on multimodal machine learning, vision–language models,
+          and trustworthy AI—especially medical image–text understanding,
+          retrieval-augmented generation, and rigorous evaluation of language models.
+        </p>
+      </section>
+
+      <section id="interests">
+        <h2>Research Interests</h2>
+        <p class="interests">
+          Multimodal Machine Learning · Vision–Language Models · Trustworthy AI ·
+          Medical Image and Image–Text Understanding · Retrieval-Augmented Generation ·
+          Evaluation of Language Models
+        </p>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <ol class="pub-list" reversed>
+          <li>
+            <span class="pub-authors"><strong>Sagar Chhabriya</strong>, Sumra Khan, Inad Alqurashi, Mansoor Ahmed, Rizwan Qureshi.</span>
+            <span class="pub-title"> “A Modular Empirical Analysis of RAG Pipelines on WikiQA and SQuAD: The Roles of Chunking, Embeddings, Retrieval, and Model Scale.”</span>
+            <em>Under minor revision</em>, 2026.
+            <span class="pub-note"> (First author and corresponding author)</span>
+            <span class="pub-links">
+              [<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339962" target="_blank" rel="noreferrer">Preprint</a>,
+              <a href="https://github.com/SagarChhabriya/empirical-analysis-of-RAG" target="_blank" rel="noreferrer">Code</a>]
+            </span>
+          </li>
+          <li>
+            <span class="pub-authors"><strong>Sagar Chhabriya</strong>, H. Dhingana, N. N. Dahar, A. Qadir.</span>
+            <span class="pub-title"> “Hirebase: A Cloud-Native Platform for AI-Assisted Recruitment with a Voice Interview Agent.”</span>
+            <em>Bulletin of Toraigyrov University, Physics and Mathematics Series</em>, 2026.
+            <span class="pub-links">
+              [<a href="https://doi.org/10.48081/BTOUPhMath3.2026/30-44" target="_blank" rel="noreferrer">DOI</a>]
+            </span>
+          </li>
+          <li>
+            <span class="pub-authors">Sumra Khan, <strong>Sagar Chhabriya</strong>, Aizan Zafar, Sheeraz Arif, Amgad Muneer, Anas Zafar, Shaina Raza, Rizwan Qureshi.</span>
+            <span class="pub-title"> “Towards Responsible Multimodal Medical Reasoning via Context-Aligned Vision-Language Models.”</span>
+            <em>KnowledgeMR Workshop @ CVPR 2026 (poster); arXiv:2604.08815</em>, 2026.
+            <span class="pub-note"> (Second author)</span>
+            <span class="pub-links">
+              [<a href="https://arxiv.org/abs/2604.08815" target="_blank" rel="noreferrer">arXiv</a>]
+            </span>
+          </li>
+          <li>
+            <span class="pub-authors"><strong>Sagar Chhabriya</strong>, Sumra Khan, Rizwan Ahmed Khan, Mansoor Ahmed.</span>
+            <span class="pub-title"> “Agentic Retrieval-Augmented Generation: A Compact Review.”</span>
+            <em>Journal of Computers and Intelligent Systems, 3(4):283–296</em>, 2025.
+            <span class="pub-links">
+              [<a href="https://journals.iub.edu.pk/index.php/JCIS/article/view/4369" target="_blank" rel="noreferrer">Paper</a>]
+            </span>
+          </li>
+          <li>
+            <span class="pub-authors">Muhammad Rafi, Saif Ur Rehman Awan, Ramsha Jat, Aiman Falak, Fatimah Ansari, Ahmed Raza, <strong>Sagar Chhabriya</strong>.</span>
+            <span class="pub-title"> “FAST-HASOC 2025: Multimodal and Multilingual Approaches for Hate Speech and Offensive Content Detection in Hindi Memes.”</span>
+            <em>FIRE 2025 Working Notes, CEUR-WS Vol. 4173, pp. 625–631</em>, 2025.
+            <span class="pub-links">
+              [<a href="https://ceur-ws.org/Vol-4173/T9-8.pdf" target="_blank" rel="noreferrer">PDF</a>]
+            </span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="research">
+        <h2>Research Experience</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>
+              Context-Aligned Reasoning for Medical Vision-Language Models
+              <a class="inline-link" href="https://arxiv.org/abs/2604.08815" target="_blank" rel="noreferrer">[arXiv]</a>
+            </h3>
+            <span class="period">Apr 2026</span>
+          </div>
+          <p class="org">KnowledgeMR @ CVPR 2026 (poster) · Second author</p>
+          <ul>
+            <li>Co-authored a framework in which a frozen vision–language model must reconcile radiomic statistics, Grad-CAM activations, and vocabulary-grounded cues before returning a structured chest X-ray answer with evidence, uncertainty, and safety notes—reducing fluent but weakly grounded conclusions.</li>
+            <li>Conducted cross-dataset evaluation on CheXpert; radiomic features achieved AUC 0.71 while text embeddings reached 0.50.</li>
+            <li>Found that image-plus-text conditioning reduced average hallucinated keywords from 1.14 to 0.25; tool-augmented reasoning shortened evidence explanations from 19.4 to 15.3 words without increasing model confidence.</li>
+            <li>Designed the methodology figure, quantitative tables, and conference poster.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>
+              A Modular Empirical Analysis of RAG Pipelines on WikiQA and SQuAD
+              <a class="inline-link" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6339962" target="_blank" rel="noreferrer">[SSRN]</a>
+            </h3>
+            <span class="period">2025–2026</span>
+          </div>
+          <p class="org">First author and corresponding author · Under minor revision</p>
+          <ul>
+            <li>Isolated four design levers—6 chunking strategies, 9 embedding models, dense/BM25/hybrid retrieval, and 7 generators (82M–7B)—across 44 main configurations and 18 ablations on WikiQA and SQuAD.</li>
+            <li>Built a reproducible BEIR-style benchmark showing that corpus construction errors alone can force Exact Match to zero regardless of the generator.</li>
+            <li>Reported retrieval metrics (Hit@k, MRR, answer-in-context) beside answer quality with 95% bootstrap intervals and paired significance tests.</li>
+            <li>Found that the generator dominates (SQuAD EM 0.00 → 0.65 from 82M to 3B instruction-tuned), BM25 trails dense retrieval (Hit@5 0.754 vs 0.902), and chunking has no significant effect.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>
+              Sentiment Classification of Hindi–English Memes (HASOC 2025)
+              <a class="inline-link" href="https://ceur-ws.org/Vol-4173/T9-8.pdf" target="_blank" rel="noreferrer">[FIRE Working Notes]</a>
+            </h3>
+            <span class="period">June 2025 – Aug 2025</span>
+          </div>
+          <p class="org">NLP Research Assistant, VSL Lab, FAST-NUCES · Karachi, Pakistan</p>
+          <ul>
+            <li>Developed a TF-IDF and Random Forest pipeline for ternary sentiment classification of noisy OCR-extracted Hindi–Hinglish meme text (1,133 training samples).</li>
+            <li>Diagnosed weak baselines via manual instance inspection (OCR noise, code-mixing, task-specific patterns) and curated Hindi–Hinglish stopword and offensive-term dictionaries.</li>
+            <li>Improved macro-F1 from ~0.64 to 0.70 on the test set with five-fold stratified cross-validation; co-authored the FIRE 2025 Working Notes paper.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <span class="period">Sept 2022 – Aug 2026</span>
+          </div>
+          <p class="org">Sukkur IBA University (CGPA: <strong>3.71/4.0</strong>) · Sukkur, Pakistan</p>
+          <ul>
+            <li><strong>Distinction:</strong> Gold Medalist</li>
+            <li><strong>Relevant coursework:</strong> Machine Learning, Artificial Intelligence, Computer Vision, Data Science, Probability and Statistics, Linear Algebra, Design and Analysis of Algorithms, Human–Computer Interaction</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="experience">
+        <h2>Teaching &amp; Work Experience</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Machine Learning Trainer, atomcamp</h3>
+            <span class="period">Aug 2025 – Present</span>
+          </div>
+          <p class="org">Islamabad, Pakistan</p>
+          <ul>
+            <li>Mentored 80+ learners and guided 30+ students through end-to-end AI/ML projects and deployments.</li>
+            <li>Conduct weekly sessions on ML, DL, NLP, Generative AI, MLOps, Docker, CI/CD, and cloud deployment.</li>
+            <li>Designed capstone projects, coding labs, and technical guides; provide 1:1 mentorship and code reviews.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Programming Fundamentals Course Instructor, Times Tech Computer Center</h3>
+            <span class="period">Feb 2025 – May 2025</span>
+          </div>
+          <p class="org">Kandhkot, Pakistan</p>
+          <ul>
+            <li>Delivered a four-month C++ course to 15+ secondary-school students covering core syntax and structured programming.</li>
+            <li>Designed 25+ hands-on exercises and debugging activities.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="projects">
+        <h2>Selected Projects</h2>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>
+              Hire-Base (AI-Assisted HR &amp; Recruitment Platform)
+              <a class="inline-link" href="https://github.com/SagarChhabriya/agentic-hr" target="_blank" rel="noreferrer">[GitHub]</a>
+            </h3>
+          </div>
+          <p class="org">React, FastAPI, PostgreSQL, Supabase, Azure, LiveKit, Groq, Deepgram</p>
+          <ul>
+            <li>End-to-end HR platform for onboarding, hiring, assessments, interviews, and recruiter insights.</li>
+            <li>AI voice-interview agent with LiveKit, Groq/Llama 3.1, Deepgram STT/TTS, and VAD; CI/CD via GitHub Actions.</li>
+          </ul>
+        </article>
+
+        <article class="entry">
+          <div class="entry-head">
+            <h3>Graph Neural Networks for Aerodynamic Drag Prediction</h3>
+          </div>
+          <p class="org">PyTorch, PyTorch Geometric, GraphSAGE, CFD</p>
+          <ul>
+            <li>GNN framework predicting aerodynamic drag from airfoil CFD meshes (nodal velocities + connectivity).</li>
+            <li>GraphSAGE with Top-K pooling; test R² 0.9837, outperforming CNN and shallow regression baselines.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills">
+          <li><strong>Programming:</strong> Python, C++, Java</li>
+          <li><strong>ML &amp; NLP:</strong> Scikit-learn, PyTorch, TensorFlow/Keras, NLTK, Hugging Face Transformers, FAISS, LangChain</li>
+          <li><strong>MLOps &amp; Cloud:</strong> Docker, GitHub Actions, W&amp;B, GCP Cloud Run, AWS (EC2, S3), Azure Web Apps</li>
+          <li><strong>Web &amp; Tools:</strong> FastAPI, Streamlit, Git, GitHub Codespaces</li>
+        </ul>
+      </section>
+
+      <section id="talks">
+        <h2>Talks</h2>
+        <ul class="plain">
+          <li><strong>1st ICCA @ Salim Habib University</strong> (May 2025) — Presented: Agentic Retrieval-Augmented Generation: A Compact Review</li>
+        </ul>
+      </section>
+
+      <section id="awards">
+        <h2>Awards &amp; Leadership</h2>
+        <ul class="plain">
+          <li><strong>Gold Medalist</strong> — BS Computer Science, Sukkur IBA University</li>
+          <li><a href="https://www.holopin.io/@sagarchhabriya3#badges" target="_blank" rel="noreferrer"><strong>Hacktoberfest 2025 Super Contributor</strong></a> — Recognized open-source contributor</li>
+          <li><a href="https://www.linkedin.com/posts/sagar-chhabriya_activity-7296574905934909440-XMnX" target="_blank" rel="noreferrer"><strong>Master Trainee PVE (EU-funded)</strong></a> — Trained 185+ students in violent extremism prevention</li>
+          <li><a href="https://www.credly.com/badges/ad76b653-1048-4090-bcf6-605bf97148ad/" target="_blank" rel="noreferrer"><strong>GitHub Foundations Exam</strong></a> — Certified in Git, GitHub Actions, and project management</li>
+          <li><strong>Aspire Institute Leaders Program 2024</strong> — Completed Cohort 1 leadership training</li>
+          <li><strong>Prime Minister's Laptop Award 2023</strong> — National merit recipient for academic excellence in Computer Science</li>
+          <li><strong>Book Review Competition Winner 2022</strong> — 1st place among 17 sections across 5 SIBAU campuses</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        © 2026 Sagar Chhabriya. For PhD inquiries:
+        <a href="mailto:sagarchhabriya34@gmail.com">sagarchhabriya34@gmail.com</a>
+      </p>
+    </footer>
+  </div>
 </body>
 </html>
