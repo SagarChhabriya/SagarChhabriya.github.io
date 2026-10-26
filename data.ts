@@ -7,7 +7,7 @@ import {
 
 export const PERSONAL = {
   name: 'Sagar Chhabriya',
-  tagline: 'Aspiring PhD Student · Multimodal ML & Trustworthy AI',
+  tagline: 'Multimodal ML & Trustworthy AI',
   email: 'sagarchhabriya34@gmail.com',
   affiliation: 'Sukkur IBA University',
   location: 'Sukkur, Pakistan',
@@ -20,7 +20,7 @@ export const PERSONAL = {
     scholar: 'https://scholar.google.com/citations?user=erpf3JgAAAAJ&hl=en',
     portfolio: 'https://sagarchhabriya.github.io',
   },
-  bio: `I am a final-year BS Computer Science student at Sukkur IBA University (Gold Medalist, CGPA 3.71/4.0), applying for CS PhD programs for Fall 2027. My research focuses on multimodal machine learning, vision–language models, and trustworthy AI—especially medical image–text understanding, retrieval-augmented generation, and rigorous evaluation of language models.`,
+  bio: `I am a BS Computer Science graduate from Sukkur IBA University (Gold Medalist, CGPA 3.71/4.0). My research focuses on multimodal machine learning, vision–language models, and trustworthy AI—especially medical image–text understanding, retrieval-augmented generation, and rigorous evaluation of language models.`,
   interests: [
     'Multimodal Machine Learning',
     'Vision–Language Models',

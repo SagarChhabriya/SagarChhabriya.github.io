@@ -257,7 +257,7 @@ const App: React.FC = () => {
 
       <footer className="footer">
         <p>
-          © {new Date().getFullYear()} {PERSONAL.name}. For PhD inquiries:{' '}
+          © {new Date().getFullYear()} {PERSONAL.name}. For inquiries:{' '}
           <a href={PERSONAL.links.email}>{PERSONAL.email}</a>
         </p>
       </footer>

@@ -1,6 +1,6 @@
 # Sagar Chhabriya — Academic Homepage
 
-Simple static research homepage for CS PhD applications (Fall 2027).
+Simple static research homepage.
 
 **Live:** [sagarchhabriya.github.io](https://sagarchhabriya.github.io)
 
